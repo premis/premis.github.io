@@ -1,33 +1,14 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# Jekyll generated site
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# Ruby / Bundler
+Gemfile.lock
+vendor/
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -36,5 +17,10 @@
 ehthumbs.db
 Thumbs.db
 
+# IDE
 *.iml
-.idea
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

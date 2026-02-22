@@ -1,3 +1,6 @@
-remote_theme: pages-themes/minimal@v0.2.0
+title: The Still Point
+description: Reflections on the inner journey
+url: https://premis.github.io
+baseurl: ""
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-seo-tag
