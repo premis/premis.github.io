@@ -53,7 +53,8 @@ body {
   height: 90vmin;
   transform: translate(-50%, -50%);
   background: url("../images/mandala.svg") center / contain no-repeat;
-  opacity: 0.06;
+  filter: brightness(10);
+  opacity: 0.56;
   pointer-events: none;
   z-index: 0;
 }
@@ -67,7 +68,7 @@ body {
   width: 70vmax;
   height: 100vh;
   background: url("../images/pastels.png") top right / contain no-repeat;
-  opacity: 0.38;
+  opacity: 0.4;
   pointer-events: none;
   z-index: 0;
 }
