@@ -53,8 +53,8 @@ body {
   height: 90vmin;
   transform: translate(-50%, -50%);
   background: url("../images/mandala.svg") center / contain no-repeat;
-  filter: brightness(10);
-  opacity: 0.56;
+  filter: brightness(0);
+  opacity: 0.6;
   pointer-events: none;
   z-index: 0;
 }
@@ -71,6 +71,62 @@ body {
   opacity: 0.4;
   pointer-events: none;
   z-index: 0;
+}
+
+/* ── Mandala toggle ── */
+
+.mandala-toggle {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: $accent;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.mandala-toggle:hover {
+  opacity: 1;
+}
+
+.mandala-toggle svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.25));
+}
+
+.mandala-toggle .icon-full,
+.mandala-toggle .icon-crescent {
+  transition: opacity 0.2s;
+}
+
+.mandala-toggle.is-full .icon-full { opacity: 1; }
+.mandala-toggle.is-full .icon-crescent { opacity: 0; }
+.mandala-toggle.is-dim .icon-full { opacity: 0; }
+.mandala-toggle.is-dim .icon-crescent { opacity: 1; }
+
+.mandala-toggle-container {
+  position: absolute;
+  top: 0px;
+  left: 16px;
+}
+
+.seal-container {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  opacity: 0.45;
+  pointer-events: none;
+  filter: grayscale(100%);
 }
 
 /* ── Layout ── */
@@ -410,7 +466,7 @@ footer a:hover { color: $accent; }
 
 @media print {
   body { background: #fff; color: #333; padding: 0.4in; font-size: 12pt; }
-  .mandala-bg, .light-effect { display: none; }
+  .mandala-bg, .light-effect, .mandala-toggle, .seal { display: none; }
   a { color: #333; }
   header, footer { border-color: #ccc; }
 }

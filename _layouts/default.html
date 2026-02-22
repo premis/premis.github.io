@@ -12,9 +12,18 @@
     {% include head-custom.html %}
   </head>
   <body>
-    <div class="mandala-bg"></div>
+    <div class="mandala-bg" id="mandala-bg"></div>
     <div class="light-effect"></div>
     <div class="wrapper">
+      <div class="mandala-toggle-container">
+      <button type="button" class="mandala-toggle is-dim" id="mandala-toggle" aria-label="Toggle mandala brightness" title="Toggle mandala brightness">
+        <svg class="icon-full" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg>
+        <svg class="icon-crescent" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/></svg>
+      </button>
+      </div>
+      <div class="seal-container">  
+        <img src="{{ "/assets/images/seal.png" | relative_url }}" alt="本悟" class="seal" width="24" height="48">
+      </div>
       <header>
         <a href="{{ "/" | relative_url }}">
           <img src="{{ "/assets/images/logo.svg" | relative_url }}" alt="Logo" class="site-logo" />
@@ -36,5 +45,6 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/mandala-toggle.js" | relative_url }}"></script>
   </body>
 </html>
