@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% if page.category %}
+  <p class="article-meta">
+    <a href="{{ "/categories/" | relative_url }}#{{ page.category | slugify }}" class="category-label">{{ page.category }}</a>
+  </p>
+  {% endif %}
+
+  {{ content }}
+</article>

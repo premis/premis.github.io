@@ -1,0 +1,23 @@
+---
+layout: default
+title: Categories
+permalink: /categories/
+---
+<h1>Categories</h1>
+
+{% assign grouped = site.articles | group_by: "category" %}
+{% for group in grouped %}
+  {% assign cat_slug = group.name | slugify %}
+  <div class="category-group" id="{{ cat_slug }}">
+    <h2><a href="#{{ cat_slug }}">{{ group.name }}</a></h2>
+    <ul class="article-list">
+      {% assign sorted = group.items | sort: "title" %}
+      {% for article in sorted %}
+        <li>
+          <h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3>
+          <p>{{ article.content | strip_html | truncatewords: 30 }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
