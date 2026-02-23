@@ -80,6 +80,72 @@ body {
 
 }
 
+/* ── Encrypted post (password-protected) ── */
+
+.encrypted-post { margin-top: 0.5em; }
+
+.encrypted-post-message {
+  color: $text-heading;
+  margin-bottom: 0.25em;
+}
+
+.encrypted-post-note {
+  color: $text-muted;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.encrypted-post-form {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+}
+
+.encrypted-post-input {
+  padding: 0.4em 0.6em;
+  font: inherit;
+  color: $text;
+  background: $bg-surface;
+  border: 1px solid $border;
+  border-radius: 4px;
+  min-width: 180px;
+}
+
+.encrypted-post-input:focus {
+  outline: none;
+  border-color: $accent;
+}
+
+.encrypted-post-btn {
+  padding: 0.4em 0.8em;
+  font: inherit;
+  color: $bg-primary;
+  background: $accent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.encrypted-post-btn:hover {
+  background: $accent-hover;
+}
+
+.encrypted-post-error {
+  color: $accent-coral;
+  margin-top: 0.5em;
+}
+
+.encrypted-post-body {
+  margin-top: 0.5em;
+}
+
+.encrypted-post-body h1,
+.encrypted-post-body h2,
+.encrypted-post-body h3 {
+  color: $text-heading;
+}
+
 /* ── Mandala toggle ── */
 
 .mandala-toggle {

@@ -4,4 +4,19 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
+{% if page.encrypted and page.payload %}
+<article class="post-content encrypted-post" data-salt="{{ page.payload.salt }}" data-iv="{{ page.payload.iv }}" data-ciphertext="{{ page.payload.ciphertext }}" data-iterations="{{ page.payload.iterations }}">
+  <div class="encrypted-post-ui">
+    <p class="encrypted-post-message"><em>This post is password protected.</em> Enter the password to read it.</p>
+    <p class="encrypted-post-note">The password is not sent to any server.</p>
+    <form class="encrypted-post-form" autocomplete="off">
+      <input type="password" class="encrypted-post-input" placeholder="Password" aria-label="Password" autocomplete="off">
+      <button type="submit" class="encrypted-post-btn">Decrypt</button>
+    </form>
+    <p class="encrypted-post-error" role="alert" hidden>Wrong password.</p>
+  </div>
+  <div class="encrypted-post-body" hidden></div>
+</article>
+{% else %}
 {{ content }}
+{% endif %}

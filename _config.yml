@@ -5,6 +5,9 @@ url: https://premis.github.io
 repository: premis/premis.github.io
 baseurl: ""
 
+# Magic phrase prepended to encrypted post content; must match when encrypting for web.
+encrypted_magic: "premis-verified"
+
 collections:
   articles:
     output: true

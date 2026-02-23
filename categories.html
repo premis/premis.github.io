@@ -15,7 +15,7 @@ permalink: /categories/
       {% for article in sorted %}
         <li>
           <h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3>
-          <p>{{ article.content | strip_html | truncatewords: 30 }}</p>
+          <p>{{ article.excerpt | strip_html | truncatewords: 30 }}</p>
         </li>
       {% endfor %}
     </ul>

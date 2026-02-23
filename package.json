@@ -1,0 +1,12 @@
+{
+  "name": "premis.github.io",
+  "private": true,
+  "description": "Scripts for encrypted posts",
+  "scripts": {
+    "encrypt-post": "node scripts/encrypt_post.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "yaml": "^2.3.4"
+  }
+}

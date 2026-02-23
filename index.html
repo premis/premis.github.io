@@ -8,7 +8,7 @@ title: Home
   {% for post in site.posts %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a> <small> ({{ post.date | date: "%Y-%m-%d" }}) </small></h2>
-      <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      <p>{% if post.encrypted %}<em>This post is password protected.</em>{% else %}{{ post.excerpt | strip_html | truncatewords: 40 }} …{% endif %}</p>
     </li>
   {% endfor %}
 </ul>

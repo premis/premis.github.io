@@ -13,7 +13,7 @@ permalink: /articles/
       {% if article.category %}
         <a href="{{ "/categories/" | relative_url }}#{{ article.category | slugify }}" class="category-label">{{ article.category }}</a>
       {% endif %}
-      <p>{{ article.content | strip_html | truncatewords: 40 }}</p>
+      <p>{{ article.excerpt | strip_html | truncatewords: 30 }}</p>
     </li>
   {% endfor %}
 </ul>
