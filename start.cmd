@@ -1,0 +1,1 @@
+docker run --rm -it --name jekyll-hyde -p 4000:4000 -v "%cd%:/srv/jekyll" jekyll/jekyll jekyll serve --watch --force_polling 
