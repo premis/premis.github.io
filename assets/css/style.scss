@@ -68,9 +68,16 @@ body {
   width: 70vmax;
   height: 100vh;
   background: url("../images/pastels2.png") top right / contain no-repeat;
-  opacity: 0.4;
+  opacity: 1;
   pointer-events: none;
   z-index: 0;
+
+  -webkit-mask-image: linear-gradient(to right, transparent, black);
+  mask-image: linear-gradient(to right, transparent, black);
+  mask-size: 100% 100%;   /* match element size */
+  mask-position: 200px 0;
+  mask-repeat: no-repeat;
+
 }
 
 /* ── Mandala toggle ── */
