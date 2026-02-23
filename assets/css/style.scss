@@ -16,7 +16,7 @@ $text-dim:       #5a5880;
 
 $accent:         #d6a64f;
 $accent-hover:   #e8c060;
-$accent-coral:   #d4836d;
+$accent-coral:   #d1c0bc;
 
 $syntax-green:   #8ac48a;
 $syntax-blue:    #7ab0d4;
@@ -313,6 +313,11 @@ blockquote {
   padding: 0 0 0 24px;
   font-style: italic;
   color: $text-secondary;
+}
+
+/* Quotes in articles: distinct color */
+article blockquote {
+  /*color: $accent-coral;*/
 }
 
 img { max-width: 100%; }

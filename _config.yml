@@ -14,7 +14,6 @@ exclude:
   - "package.json"
   - "package-lock.json"
   - "scripts"
-  - "_writing"
   - "README.md"
   - "start.cmd"
   - "build.cmd"

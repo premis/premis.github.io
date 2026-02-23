@@ -15,21 +15,20 @@ So. It is not our speech that reflects our being, but rather our actions. More t
 Action reflects our being, but what defines our being is what determines it and that is the cornerstone of understanding the "self". For it is not the "self" that determines it, but rather the nonself (anattā). 
 
 Buddha rightfully said in the Saṁyutta Nikāya (Dependent Origination): 
-
-*"When this exists, that comes to be; with the arising of this, that arises.*  
-*When this does not exist, that does not come to be; *  
-*with the cessation of this, that ceases.*  
-*That is, with ignorance as condition, volitional formations come to be;*  
-*with volitional formations as condition, consciousness….*  
-*Such is the origin of this whole mass of suffering." (# 12.41).* 
+> "When this exists, that comes to be; with the arising of this, that arises.  
+> When this does not exist, that does not come to be;  
+> with the cessation of this, that ceases.  
+> That is, with ignorance as condition, volitional formations come to be;  
+> with volitional formations as condition, consciousness….  
+> Such is the origin of this whole mass of suffering." (# 12.41). 
 
 Indeed, will and volition come as consequences of chains of dependent originations and causative chains of events, or put simply, we are just as determined as anything else, we live a constant illusion of determining ourselves out of sheer ignorance. So what determines our being? It is certainly not ourselves. 
 
 Also in the Udana, it is written: 
-*"There is no doer of deeds,*  
-*no one who reaps their fruits.*  
-*Phenomena alone flow on.*  
-*This is the right view."* 
+> "There is no doer of deeds,  
+> no one who reaps their fruits.  
+> Phenomena alone flow on.  
+> This is the right view." 
 
 As such, our being can never be trully self-determined, we are determined to be this way or that way, we then just are this way or that way, we act this way or that way. But when we have attained a level of being, we have attained it not by changing our actions, but by allowing all actions to pass without "any" (and I shall repeat) without "any" attempt to interfere (yet careful as this does not advocate passivity). Then it is our consciousness that simply contemplates, fully observes in full awareness the "being", the doing, thus our being is free from it, when we are not attempting to determine it any longer. 
 
