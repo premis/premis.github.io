@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 /**
- * Create a proper _posts file from a _writing draft: copy front matter, encrypt
- * only the body (with magic phrase), write to _posts/<basename> with encrypted
- * payload so the site can decrypt it.
+ * Encrypt a post: copy front matter, encrypt the body (with magic phrase),
+ * write to _posts/<basename> with encrypted payload so the site can decrypt it.
  *
- * Usage: node scripts/encrypt_post.js <path/to/draft.md> [password]
- * Example: node scripts/encrypt_post.js _writing/2026-02-23-deceit.md mypassword
+ * Usage: node scripts/encrypt.js <path/to/post.md> [password]
+ * Example: node scripts/encrypt.js _posts/2026-02-23-my-post.md mypassword
  *
  * Password: 2nd argument, or POST_PASSWORD env var, or prompted.
- * Output: _posts/<basename> (e.g. _posts/2026-02-23-deceit.md)
+ * Output: _posts/<basename>
  */
 
 const fs = require('fs');
@@ -34,8 +33,8 @@ function promptPassword() {
 async function main() {
   const filePath = process.argv[2];
   if (!filePath) {
-    console.error('Usage: node scripts/encrypt_post.js <path/to/draft.md> [password]');
-    console.error('Example: node scripts/encrypt_post.js _writing/2026-02-23-deceit.md mypassword');
+    console.error('Usage: node scripts/encrypt.js <path/to/post.md> [password]');
+    console.error('Example: node scripts/encrypt.js _posts/2026-02-23-my-post.md mypassword');
     process.exit(1);
   }
 

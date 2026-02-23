@@ -8,6 +8,21 @@ baseurl: ""
 # Magic phrase prepended to encrypted post content; must match when encrypting for web.
 encrypted_magic: "premis-verified"
 
+# Don't copy these into _site (dev/build tooling, drafts, etc.)
+exclude:
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
+  - "scripts"
+  - "_writing"
+  - "README.md"
+  - "start.cmd"
+  - "build.cmd"
+  - ".cursor"
+  - ".git"
+  - "Gemfile.lock"
+  - "mcps"
+
 collections:
   articles:
     output: true

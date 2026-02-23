@@ -3,7 +3,10 @@
   "private": true,
   "description": "Scripts for encrypted posts",
   "scripts": {
-    "encrypt-post": "node scripts/encrypt_post.js"
+    "encrypt-post": "node scripts/encrypt.js",
+    "encrypt-posts": "node scripts/encrypt_posts.js",
+    "decrypt-post": "node scripts/decrypt.js",
+    "decrypt-posts": "node scripts/decrypt_posts.js"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
