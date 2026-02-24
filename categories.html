@@ -9,11 +9,18 @@ permalink: /categories/
 {% assign grouped = site.articles | group_by: "category" | sort: "name" %}
 
 <div class="categories-bar" role="group" aria-label="Filter by category">
-  . &nbsp;
+  <div style="text-align: center; margin: 5px 0;">
+    ❉&nbsp;
+  </div>
+  
   {% for group in grouped %}
     {% assign cat_slug = group.name | slugify %}
+    <div>
     <a href="#{{ cat_slug }}" class="category-pill" data-category="{{ cat_slug }}">{{ group.name }}</a>
-    &nbsp; . &nbsp;
+   </div>
+   <div style="text-align: center; margin: 5px 0;">
+    &nbsp;❉&nbsp;
+   </div> 
   {% endfor %}
 </div>
 
