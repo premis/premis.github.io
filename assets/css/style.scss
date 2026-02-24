@@ -16,7 +16,7 @@ $text-dim:       #5a5880;
 
 $accent:         #d6a64f;
 $accent-hover:   #e8c060;
-$accent-coral:   #d1c0bc;
+$accent-coral:   #d4836d;
 
 $syntax-green:   #8ac48a;
 $syntax-blue:    #7ab0d4;
@@ -443,6 +443,32 @@ th { color: $accent; font-weight: 700; font-size: 13px; text-transform: uppercas
 .category-label:hover {
   color: $bg-primary;
   background: $accent;
+}
+
+/* ── Categories page: horizontal bar and filter ── */
+
+.categories-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin: 0 0 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $border;
+}
+
+.categories-bar .category-pill {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.categories-bar .category-pill.is-selected {
+  color: $text-heading;
+  font-weight: 700;
+  text-decoration: overline;
+}
+
+.categories-content .category-group.is-hidden {
+  display: none;
 }
 
 /* ── Category groups ── */
