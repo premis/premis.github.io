@@ -6,7 +6,7 @@ permalink: /articles/
 <h1>Articles</h1>
 
 <ul class="article-list">
-  {% assign sorted_articles = site.articles | sort: "title" %}
+  {% assign sorted_articles = site.articles | sort: "order" %}
   {% for article in sorted_articles %}
     <li>
       <h2><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h2>

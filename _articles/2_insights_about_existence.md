@@ -1,6 +1,7 @@
 ---
 title: Insights about Existence
 category: Philosophy
+order: 2
 ---
 
 Let us begin with a mantra: " _namo bhagavate bhaiśajyaguru vaidūryaprabharājāya tathāgatāya arhate samyaksambuddhāya tadyathā: oṃ bhaiśajye bhaiśajye bhaiśajya-samudgate svāhā_. " This mantra is known also in the short (chanting) form : "_oṃ bhaiśajye bhaiśajye mahābhaiśajye bhaiśajyarāje samudgate svāhā._"

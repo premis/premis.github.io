@@ -1,6 +1,7 @@
 ---
 title: Different Ways - to be silent
 category: Living
+order: 3
 ---
 
 In this article we delve into the different ways in which people approach life. 

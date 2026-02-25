@@ -24,17 +24,21 @@ permalink: /categories/
   {% endfor %}
 </div>
 
-<ul class="article-list categories-content">
+<div class="categories-content">
   {% for group in grouped %}
     {% assign cat_slug = group.name | slugify %}
-      <li class="category-group" id="{{ cat_slug }}" data-category="{{ cat_slug }}">
-        {% assign sorted = group.items | sort: "title" %}
+    <div class="category-group" id="{{ cat_slug }}" data-category="{{ cat_slug }}">
+      <ul class="article-list">
+        {% assign sorted = group.items | sort: "order" %}
         {% for article in sorted %}
+          <li>
             <h3><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h3>
             <p>{{ article.excerpt | strip_html | truncatewords: 30 }}</p> 
+          </li>
         {% endfor %}
-      </li>
+      </ul>
+    </div>
   {% endfor %}
-</ul>
+</div>
 
 <script src="{{ '/assets/js/categories-filter.js' | relative_url }}"></script>

@@ -12,18 +12,6 @@
     if (!content) return;
     var groups = content.querySelectorAll('.category-group');
 
-    function showAll() {
-      pills.forEach(function (p) {
-        p.classList.remove('is-selected');
-      });
-      groups.forEach(function (g) {
-        g.classList.remove('is-hidden');
-      });
-      if (window.history.replaceState) {
-        window.history.replaceState(null, '', window.location.pathname);
-      }
-    }
-
     function showOnly(categorySlug) {
       pills.forEach(function (p) {
         p.classList.toggle('is-selected', p.getAttribute('data-category') === categorySlug);
@@ -40,21 +28,29 @@
       pill.addEventListener('click', function (e) {
         e.preventDefault();
         var slug = pill.getAttribute('data-category');
-        if (pill.classList.contains('is-selected')) {
-          showAll();
-        } else {
+        // Always keep some category selected: clicking the active pill does nothing.
+        if (!pill.classList.contains('is-selected')) {
           showOnly(slug);
         }
       });
     });
 
-    // Apply hash on load
+    // Apply hash on load or fall back to the first category
     var hash = window.location.hash.slice(1);
     if (hash) {
       var match = Array.prototype.find.call(pills, function (p) {
         return p.getAttribute('data-category') === hash;
       });
-      if (match) showOnly(hash);
+      if (match) {
+        showOnly(hash);
+        return;
+      }
+    }
+
+    // No valid hash: select the first category by default
+    if (pills.length > 0) {
+      var firstSlug = pills[0].getAttribute('data-category');
+      showOnly(firstSlug);
     }
   }
 

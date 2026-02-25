@@ -6,7 +6,7 @@
 $bg-primary:     #19192a;
 $bg-surface:     #1a1a3e;
 $bg-surface-alt: #3a3a5e;
-$border:         #2a2a52;
+$border:         rgba(42, 42, 82, 0.5);
 
 $text:           #c8c5d6;
 $text-heading:   #e8e5f0;
@@ -275,10 +275,16 @@ nav a:hover, nav a:focus {
   border-bottom-color: $accent;
 }
 
+/* Active (current) section in the main nav */
+nav a.is-active {
+  color: $text-heading;
+  border-bottom-color: $accent;
+}
+
 /* ── Content ── */
 
 section {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 /* ── Typography ── */
@@ -406,6 +412,13 @@ th { color: $accent; font-weight: 700; font-size: 13px; text-transform: uppercas
 }
 
 .article-list li:last-child { border-bottom: none; }
+
+/* Categories page: article lists under .category-group should not show item dividers */
+.categories-content .article-list li {
+  border-bottom: none;
+}
+
+.categories-content .article-list { margin: 0px; }
 
 .article-list h2 {
   margin: 0 0 6px;
@@ -556,7 +569,7 @@ footer a:hover { color: $accent; }
 
   nav a { margin: 0 8px; font-size: 12px; }
 
-  section { padding: 30px 0; }
+  section { padding: 20px 0; }
 }
 
 @media screen and (max-width: 480px) {

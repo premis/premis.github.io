@@ -33,6 +33,7 @@ defaults:
       type: "articles"
     values:
       layout: article
+      order: 999
   - scope:
       path: ""
       type: "posts"
