@@ -13,10 +13,12 @@ $text-heading:   #e8e5f0;
 $text-muted:     #7a78a0;
 $text-secondary: #9a98b8;
 $text-dim:       #5a5880;
+$text-dark:      #444358;
 
 $accent:         #d6a64f;
 $accent-hover:   #e8c060;
 $accent-coral:   #d4836d;
+
 
 $syntax-green:   #8ac48a;
 $syntax-blue:    #7ab0d4;
@@ -314,7 +316,7 @@ hr {
 }
 
 blockquote {
-  border-left: 2px solid $accent;
+  border-left: 2px dotted $text-dark; /* $accent; */
   margin: 0 0 24px;
   padding: 0 0 0 24px;
   font-style: italic;
