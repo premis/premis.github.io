@@ -1,6 +1,6 @@
 ---
 title: "Words about awakening"
-category: Philosophy
+category: Practical
 order: 4
 ---
 
